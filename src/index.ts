@@ -80,7 +80,7 @@ async function sendNotifications(episodes: AnimeEpisode[], studio: AnimeStudio) 
 }
 
 async function sendEpisodeToEndpoint(episode: AnimeEpisode) {
-    const endpointUrl = 'YOUR_ENDPOINT_URL'; // Replace with your actual endpoint URL
+    const endpointUrl = process.env.ENDPOINT_URL; // Replace with your actual endpoint URL
     try {
         await axios.post(endpointUrl, episode);
         console.log("Episode sent to endpoint:", episode);
