@@ -32,7 +32,7 @@ const animeShinigamis: Shinigami[] = [
 async function main() {
     for (const shinigami of animeShinigamis) {
         try {
-            const allNewEpisodes = await shinigami.getEpisodes();
+            const allNewEpisodes = await shinigami.getJobs();
             const processedEpisodes = await postProcessEpisodes(allNewEpisodes);
             await updateEpisodes(processedEpisodes, shinigami.company);
         } catch (err: any) {
