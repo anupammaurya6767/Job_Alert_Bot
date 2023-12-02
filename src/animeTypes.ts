@@ -2,7 +2,7 @@ export interface AnimeEpisode {
     id: string;
     name: string;
     url: string;
-    description: string;
+    jd: string;
     location: string;
     companyName: string;
 }
