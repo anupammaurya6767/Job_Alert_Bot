@@ -1,3 +1,8 @@
+# Join Whatsapp Alert Group 🎉🎉
+<a href="https://chat.whatsapp.com/BFtVPaizxKp8XZ6lOnMY54" >
+![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
+</a>
+
 # Job_Alert_Bot
 
 JAlert Bot is a Node.js application designed to fetch and alert users about new job postings from various companies. It utilizes GitHub Actions for scheduled tasks and connects with MongoDB to store and manage job data.
