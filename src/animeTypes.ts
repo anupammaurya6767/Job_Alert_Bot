@@ -1,10 +1,10 @@
 export interface AnimeEpisode {
     id: string;
-    title: string;
+    name: string;
     url: string;
     description: string;
     location: string;
-    studioName: string;
+    companyName: string;
 }
 
 export interface AnimeStudio {
