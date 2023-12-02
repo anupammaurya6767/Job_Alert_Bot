@@ -1,5 +1,5 @@
 # Join Whatsapp Alert Group 🎉🎉
-<a href="https://chat.whatsapp.com/BFtVPaizxKp8XZ6lOnMY54"><img alt="Whatsapp" src="https://img.shields.io/badge/Bash-121011.svg?logo=whatsapp&logoColor=white" height="24"></a>
+<a href="https://chat.whatsapp.com/BFtVPaizxKp8XZ6lOnMY54"><img alt="Whatsapp" src="https://img.shields.io/badge/Whatsapp-121011.svg?logo=whatsapp&logoColor=white" height="24"></a>
     
 
 # Job_Alert_Bot
