@@ -11,7 +11,7 @@ const headers = {
 };
 const reqBody = { "params": { "location": [{ "country": "IND", "region": "Karnataka", "city": "Bangalore" }, { "country": "IND", "region": "Telangana", "city": "Hyderabad" }, { "country": "IND", "region": "Karnataka", "city": "Bengaluru" }, { "country": "IND", "city": "Remote" }], "department": ["Engineering"] }, "page": 0, "limit": 1000 }
 
-const narutoHandler: Handler = {
+const narutoHandler: Shinigami = {
     company: {
         name: NAME,
     },
@@ -23,7 +23,7 @@ const narutoHandler: Handler = {
             method: 'POST',
         }).catch(err => err.response)
         const jobs: any[] = apiRes.data.data?.results || [];
-        let result: Job[] = jobs.map(job => {
+        let result: AnimeEpisode[] = jobs.map(job => {
             return {
                 id: String(job.id),
                 name: job.title,
