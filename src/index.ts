@@ -19,7 +19,7 @@ const animeDB = {
     password: process.env.ANIME_DB_PASSWORD
 };
 
-mongoose.connect(`mongodb+srv://${animeDB.username}:${animeDB.password}@anime-cluster.5gkbu.mongodb.net/AnimeAlert?retryWrites=true&w=majority`);
+mongoose.connect(`mongodb+srv://${animeDB.username}:${animeDB.password}@expresso.7tk1f8j.mongodb.net/JAlert?retryWrites=true&w=majority`);
 
 const animeShinigamis: Shinigami[] = [
     deathNoteStudios,
