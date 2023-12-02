@@ -1,6 +1,7 @@
 name: 😎 AnimeAlerts Cron Job
 
 on:
+  push:
   # Triggers the workflow every 6 hours
   schedule:
     - cron: "0 */6 * * *"
