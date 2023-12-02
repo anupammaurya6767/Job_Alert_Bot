@@ -7,7 +7,7 @@ const url = `${baseUrl}/?country=India&team_id=25506&team_id=25508&q=&limit=25`;
 
 const NAME = 'sharechat';
 
-const onePieceHandler: Handler = {
+const onePieceHandler: Shinigami = {
     company: {
         name: NAME,
     },
@@ -15,7 +15,7 @@ const onePieceHandler: Handler = {
         const htmlRes = await axios.get(url);
         const $ = cheerio.load(htmlRes.data); // Load the HTML string into cheerio
 
-        const result: Job[] = [];
+        const result: AnimeEpisode[] = [];
 
         $('.js-openings-list > .list-item').each((idx, element) => {
             let url = `${baseUrl}${$(element).find('a').attr('href')?.trim()}`;
