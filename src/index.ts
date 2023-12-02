@@ -34,9 +34,9 @@ async function main() {
         try {
             const allNewEpisodes = await shinigami.getEpisodes();
             const processedEpisodes = await postProcessEpisodes(allNewEpisodes);
-            await updateEpisodes(processedEpisodes, shinigami.animeStudio);
+            await updateEpisodes(processedEpisodes, shinigami.company);
         } catch (err: any) {
-            console.log(`Error processing episodes for ${shinigami.animeStudio.name}: ${err}`);
+            console.log(`Error processing episodes for ${shinigami.company.name}: ${err}`);
         }
     }
     console.log("Starting anime cleanup");
