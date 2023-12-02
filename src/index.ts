@@ -5,6 +5,8 @@ import { AnimeStudio, Shinigami, AnimeEpisode } from "./animeTypes";
 import mongoose from 'mongoose';
 import EpisodeModel from "./models/episode";
 
+import { filterUnwantedEpisodes } from "./utils";
+
 import axios from 'axios'; // Import Axios for making HTTP requests
 
 // Anime Studios
@@ -45,8 +47,7 @@ async function main() {
 }
 
 async function postProcessEpisodes(episodes: AnimeEpisode[]) {
-    // You can add any additional post-processing logic here
-    return episodes;
+    return filterUnwantedEpisodes(episodes);
 }
 
 async function updateEpisodes(episodes: AnimeEpisode[], studio: AnimeStudio) {
