@@ -3,11 +3,11 @@ import { AnimeEpisode } from '../animeTypes';
 
 const episodeSchema = new mongoose.Schema<AnimeEpisode>({
     id: String,
-    title: String,
+    name: String,
     url: String,
-    description: String,
+    jd: String,
     location: String,
-    studioName: String,
+    companyName: String,
 });
 
 const EpisodeModel = mongoose.model<AnimeEpisode>('AnimeEpisode', episodeSchema);
