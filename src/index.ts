@@ -1,5 +1,5 @@
-const shinigamiNote = require('dotenv');
-shinigamiNote.config();
+const dotenv = require('dotenv');
+dotenv.config();
 
 import { AnimeStudio, Shinigami, AnimeEpisode } from "./animeTypes";
 import mongoose from 'mongoose';
