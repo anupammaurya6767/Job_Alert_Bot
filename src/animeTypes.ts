@@ -12,6 +12,6 @@ export interface AnimeStudio {
 }
 
 export interface Shinigami {
-    animeStudio: AnimeStudio;
+    company: AnimeStudio;
     getEpisodes: () => Promise<AnimeEpisode[]>;
 }
