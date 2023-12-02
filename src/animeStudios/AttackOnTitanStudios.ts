@@ -10,18 +10,18 @@ const urls = [
 
 const name = 'bharatpe';
 
-const attackHandler: Handler = {
+const attackHandler: Shinigami = {
     company: {
         name: name,
     },
     getJobs: async () => {
-        let result: Job[] = [];
+        let result: AnimeEpisode[] = [];
 
         for (const url of urls) {
 
             const apiRes = await axios.get(url);
             const jobs: any[] = apiRes.data.message.jobs || [];
-            const currResult: Job[] = jobs.map(job => {
+            const currResult: AnimeEpisode[] = jobs.map(job => {
                 return {
                     id: job.id,
                     name: job.title,
